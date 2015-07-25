@@ -37,4 +37,4 @@ data$activity <- factor(data$activity,
 
 data_summary <- ddply(data, .(activity, subject), numcolwise(mean))
 
-write.table(data_summary, "tydy_data.txt", row.name = FALSE)
+write.table(data_summary, "tidy_data.txt", row.name = FALSE)
